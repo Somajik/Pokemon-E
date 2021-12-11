@@ -1,0 +1,133 @@
+body {
+  background: #004488;
+  background-image: url(../Images/eau.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: 10em;
+}
+#container {
+  width: 90%;
+  background: white;
+}
+
+#header_title {
+  display: flex;
+  justify-content: center;
+}
+#header_logo,
+h1 {
+  font-size: 6em;
+  color: #004488;
+  height: 1em;
+  align-items: baseline;
+  margin-top: 1em;
+}
+#menu_container {
+  display: flex;
+  justify-content: space-around;
+}
+.menu_item,
+form {
+  font-size: 2em;
+  margin-left: 1em;
+  color: black;
+  text-decoration: none;
+  font-weight: 2em;
+}
+input {
+  font-size: 40%;
+}
+
+footer {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 2em;
+}
+main {
+  display: grid;
+  background: white;
+  padding: 3em;
+  grid-template-columns: 49% 24% 23%;
+  grid-template-areas:
+    "wp up up"
+    "type1 type2 type2"
+    "type3 pub1 pub2";
+  gap: 2em;
+}
+
+img {
+  border: black solid 1px;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+}
+.description {
+  background: white;
+  border: grey solid 1px;
+  width: 60%;
+  height: 90%;
+  justify-content: center;
+}
+
+#week_pokemon {
+  grid-area: wp;
+  border: black solid 1px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#unknown_pokemon {
+  grid-area: up;
+  border: black solid 1px;
+}
+.type_content {
+  background: white;
+  opacity: 0.8;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2em;
+}
+#type1 {
+  background-image: url(../Images/eau.jpg);
+  border: solid black 1px;
+  grid-area: type1;
+  height: 100%;
+}
+#type2 {
+  border: solid black 1px;
+  background-image: url(../Images/terre.jpg);
+  grid-area: type2;
+}
+#type3 {
+  border: black solid 1px;
+  background-image: url(../Images/feu.jpg);
+  grid-area: type3;
+}
+#pub1 {
+  grid-area: pub1;
+  border: solid 1px grey;
+}
+#pub2 {
+  grid-area: pub2;
+  border: solid 1px grey;
+}
+
+#week_pokemon,
+#unknown_pokemon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: palegoldenrod;
+}
+#pub1,
+#pub2 {
+  text-align: center;
+  padding: 1em 0;
+  background: grey;
+}
+#pub1 a,
+#pub2 a {
+  color: red;
+}
